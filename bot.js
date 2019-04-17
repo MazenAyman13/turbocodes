@@ -2223,4 +2223,17 @@ if(!aUser) return msg.channel.send("Couldn't find users.");
     }
     });
 
+client.on('message',async message => {
+  let mention = message.mentions.members.first();///n3k4a is one  
+  if(message.content.startsWith("#رفض")) {
+  if(!message.channel.guild) return;///n3k4a is one  
+  let acRoom = message.guild.channels.find('name', 'القبول-الرفض');
+  if(!acRoom) return message.reply("#روم2 من فضلك انشاء روم **القبول-الرفض** او اكتب الامر");
+  if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
+  if(!mention) return message.reply("منشن شخص");///n3k4a is one  
+ 
+  acRoom.send(`**${mention} تم رفضك للاسف**`)
+  }
+});
+
 client.login(process.env.BOT_TOKEN);
