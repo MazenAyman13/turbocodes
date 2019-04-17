@@ -58,7 +58,7 @@ client.on('ready', () => {
 
 
    client.on('message', message => {
-    const prefix = '*'
+    const prefix = '#'
 var args = message.content.split(" ").slice(1);    
 if(message.content.startsWith(prefix + 'id')) {
 var year = message.author.createdAt.getFullYear()
@@ -216,7 +216,7 @@ client.on('message', function(msg) {
             text = co.first().content
 
               message.channel.send(`تم حفظ اقتراحك الرجاء انتضار الرد من قبل الاداره`)
-                client.channels.get("470260449074741249").send(`${message.author.username}'s sug => ${text}`)
+                client.channels.get("532186350665859082").send(`${message.author.username}'s sug => ${text}`)
 
               })
             }
@@ -230,7 +230,7 @@ client.on('message', function(msg) {
 
 client.on("message", message => {
 	var prefix = "*";
- if (message.content === "*help") {
+ if (message.content === "#help") {
   const embed = new Discord.RichEmbed()  
       .setColor("#8325c0") 
       .setDescription(`
@@ -238,20 +238,15 @@ client.on("message", message => {
 	       Help Commands: 
 
 			 
-${prefix}public ⥨ الاوامر العامة
+${prefix}public ⥨ اكواد الاوامر العامية
 
-${prefix}admin ⥨ اوامر الادارة
+${prefix}admin ⥨ اكواد الاوامر الادمنية
 			 
-${prefix}games ⥨ اوامر الالعاب
+${prefix}games ⥨ اكواد اللعب
 
 ${prefix}music ⥨ اوامر الموسيقى
 
-Other Commands:
-
-
-${prefix}invite ⥨ لدعوة البوت الى سيرفرك
-
-${prefix}support ⥨ لدخول سيرفر الدعم
+Turbo Codes حقوق النشر لـ ©
 
 
 	  `)
@@ -262,7 +257,7 @@ ${prefix}support ⥨ لدخول سيرفر الدعم
    
 
    client.on("message", message => {
- if (message.content === "*public") {
+ if (message.content === "#public") {
         message.react("📫")
 	           message.react("✅")
   const embed = new Discord.RichEmbed() 
@@ -270,7 +265,7 @@ ${prefix}support ⥨ لدخول سيرفر الدعم
       .setThumbnail(message.author.avatarURL)
       .setDescription(`
 	  
-الاوامــر الــعـــامـــة
+اكواد الاوامر العامية
 
 ⤠ *invite ⥨ لدعوة البوت الى سيرفرك
 ⤠ *server ⥨ معلومات عن السيرفر                      
@@ -309,7 +304,7 @@ client.on('guildCreate', guild => {
   Someone Added Me ✅
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("470259549774020608").sendEmbed(embed)
+client.channels.get("532186350665859082").sendEmbed(embed)
 });
 
 client.on('guildDelete', guild => {
@@ -321,7 +316,7 @@ client.on('guildDelete', guild => {
   I Got Kicked :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("470259562121920512").sendEmbed(embed)
+client.channels.get("532186350665859082").sendEmbed(embed)
 });
 
 
