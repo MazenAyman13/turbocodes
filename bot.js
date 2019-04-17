@@ -2419,5 +2419,220 @@ client.on('message',async message => {
     }
 });
   
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content  === prefix + "help-js-games") {
+        const embed = new Discord.RichEmbed()
+
+
+ .setColor('RANDOM')
+.setTimestamp()
+
+.addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+.addField("**#help-js-games-1  ➺      ⦁ لعبة اسئلة فورت نايت**⦁",' ‎ ')
+ .addField("**#help-js-games-2  ➺      ⦁ لعبة صراحة** ⦁",' ‎ ')
+     .addField("**#help-js-games-3  ➺      ⦁ لعبة كت تويت** ⦁",' ‎ ')
+       .addField("**#help-js-games-4  ➺      ⦁ لعبة لو خيروك** ⦁",' ‎ ')
+       .addField("**#help-js-games-5  ➺      ⦁ لعبة مريم** ⦁",' ‎ ')
+       .addField("**#help-js-games-6  ➺      ⦁ لعبة عقاب** ⦁",' ‎ ')
+       .addField("**#help-js-games-7  ➺      ⦁ لعبة فكك تحتاج جيسون** ⦁",' ‎ ')
+       .addField("**#help-js-games-8  ➺      ⦁ لعبة قرعة** ⦁",' ‎ ')
+       .addField("**#help-js-games-9  ➺      ⦁ لعبة اكس او** ⦁",' ‎ ')
+       .addField("**#help-js-games-10  ➺      ⦁ لعبة اسرع كتابة** ⦁",' ‎ ')
+   .setFooter('Turbo Codes')
+
+
+   message.channel.send({embed});
+
+
+    }
+});
+   client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-games-1") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود اسئلة لعبة فورت نايت**
+ https://pastebin.com/ycDVzyup
+`);
+
+    }
+});  
+
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-2") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+          
+
+   
+
+
+message.author.sendMessage(`
+❖ **كود لعبة صراحة**
+https://pastebin.com/sgtxADHu
+`);
+
+  }
+}); 
+
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-3") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+          
+
+   
+
+
+message.author.sendMessage(`
+❖ **كود لعبة كت تويت**
+https://paste.drhack.net/?ea5251c741026c3d#B/AW3E7mlppg8obzbnEIGgbjSc6PRFHnDqBTeOk+svw=
+`);
+
+  }
+}); 
+
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-4") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+          
+
+   
+
+
+message.author.sendMessage(`
+❖ **كود لعبة لو خيروك**
+https://paste.drhack.net/?eae21f05292515ca#Q0wYzgc1EWSI9aPafHGGTpKqLN9yypU02d/5BSnmp/M=
+`);
+
+  }
+}); 
+
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-4") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+          
+
+   
+
+
+message.author.sendMessage(`
+❖ **كود لعبة مريم**
+https://pastebin.com/ELJPi6Ef
+`);
+
+  }
+});
+
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-5") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+          
+
+   
+
+
+message.author.sendMessage(`
+❖ **كود لعبة مريم **
+https://pastebin.com/kuEXN67Z
+`);
+
+  }
+});
+
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-6") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+          
+
+   
+
+
+message.author.sendMessage(`
+❖ **كود لعبة عقاب**
+https://pastebin.com/ELJPi6Ef
+`);
+
+  }
+}); 
+
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-7") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+          
+
+   
+
+
+message.author.sendMessage(`
+❖ **كود لعبة فكك**
+https://pastebin.com/7xpL4KB4
+`);
+
+  }
+});
+
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-8") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+          
+
+   
+
+
+message.author.sendMessage(`
+❖ **كود قرعة**
+https://pastebin.com/Rh2BLmZC
+`);
+
+  }
+});
+
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-9") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+          
+
+   
+
+
+message.author.sendMessage(`
+❖ **كود لعبة اكس او**
+https://pastebin.com/ADDKWuse
+`);
+
+  }
+});
+
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-10") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+          
+
+   
+
+
+message.author.sendMessage(`
+❖ **كود لعبة اسرع كتابة**
+https://pastebin.com/PfvYF1ak
+`);
+
+  }
+});
 
 client.login(process.env.BOT_TOKEN);
