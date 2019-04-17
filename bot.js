@@ -2110,6 +2110,45 @@ message.author.sendEmbed(embed)
 
 
 
+hisMessage}\`\`\`
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**وصف الكود**: ${boi}
+**تم النشر بواسطة**: ${message.author}
+**المصدر / الشخص الذي صنع الكود**: ${boi2}`);
+
+        }
+
+      }
+
+  );
+
+});
+
+    });
+
+  }
+
+    );
+
+  });
+
+}
+
+);
+
+    })}});
+
+
+client.on ("guildMemberAdd", member => {
+  
+   var role = member.guild.roles.find ("name", "• Toxic » Member");
+   member.addRole (role);
+  
+})
+
+ //كود التقديم عالسبورت
+
+
 client.on("message", message => {
             if(message.content.startsWith("#تقديم")) {
 		if(!message.channel.guild) return;
