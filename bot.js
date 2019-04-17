@@ -13,12 +13,12 @@ client.on('ready', () => {
 
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`star Bot- Script By : n3k4a `);
+      console.log(`star Bot- Script By : Mazen `);
         console.log(`----------------`);
       console.log(`ON ${client.guilds.size} Servers ' Script By : n3k4a  Codes ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`#help-js | #help2 | #تقديم `,"http://twitch.tv/S-F")
+client.user.setGame(`'#help-js','#help2 ', #تقديم `,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
  
 });
@@ -1410,11 +1410,11 @@ client.on('message',async message => {
 
 if(!message.channel.guild) return message.reply(' ');
 
-  let rank = message.guild.member(message.author).roles.find('name', '• Toxic » Support', '• Toxic » Support Plus');
+  let rank = message.guild.member(message.author).roles.find('name', 'Support');
 
   if (!rank) return message.channel.send('🛑 **| يجب ان تمتلك رتبة سبورت لأستخدام هذا الأمر.**');
 
-  let jscodes = message.guild.channels.find(`name`, "✽-discord-js");
+  let jscodes = message.guild.channels.find(`name`, "discord-js");
 
   if(!jscodes) return message.channel.send("❌لم اجد الروم الخاص بنشر الاكواد");
 
@@ -1522,7 +1522,7 @@ if(!message.channel.guild) return message.reply(' ');
 
           jscodes.send(`@everyone | @here
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-**Toxic Codes© ⬇**
+**Turbo Codes© ⬇**
 \`\`\`css
 ${thisMessage}\`\`\`
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1558,11 +1558,11 @@ client.on('message',async message => {
 
 if(!message.channel.guild) return message.reply(' ');
 
-  let rank = message.guild.member(message.author).roles.find('name', '• Toxic » Support', '• Toxic » Support Plus');
+  let rank = message.guild.member(message.author).roles.find('name', 'Support');
 
   if (!rank) return message.channel.send('🛑 **| يجب ان تمتلك رتبة سبورت لأستخدام هذا الأمر.**');
 
-  let jscodes = message.guild.channels.find(`name`, "✽-discord-html");
+  let jscodes = message.guild.channels.find(`name`, "discord-html");
 
   if(!jscodes) return message.channel.send("❌لم اجد الروم الخاص بنشر الاكواد");
 
@@ -1670,7 +1670,7 @@ if(!message.channel.guild) return message.reply(' ');
 
           jscodes.send(`@everyone | @here
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-**Toxic Codes© ⬇**
+**Turbo Codes© ⬇**
 \`\`\`css
 ${thisMessage}\`\`\`
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1703,7 +1703,7 @@ ${thisMessage}\`\`\`
 
 client.on ("guildMemberAdd", member => {
   
-   var role = member.guild.roles.find ("name", "• Toxic » Member");
+   var role = member.guild.roles.find ("name", "Member");
    member.addRole (role);
   
 })
@@ -1715,7 +1715,7 @@ client.on("message", message => {
             if(message.content.startsWith("#تقديم")) {
 		if(!message.channel.guild) return;
                 if(message.author.bot) return;
-	    let channel = message.guild.channels.find("name", "✽-التقديمات")///n3k4a is one  
+	    let channel = message.guild.channels.find("name", "التقديمات")///n3k4a is one  
             if(!channel) return message.reply("**لانشاء روم ✽-التقديمات !!setsubmissions من فضلك اكتب الامر**")
             if(channel) {
             message.channel.send( message.member + ', **:timer:**').then( (m) =>{
@@ -1752,7 +1752,7 @@ client.on("message", message => {
                                       var ask2 = m4.content;
                                       m4.delete();///n3k4a is one  
                                       message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                        m.edit( message.member + ', **لماذا يجب علينا ان نقبلك ؟ اعطنا كودالشخص مسويه ؟🤔**' )
+                                        m.edit( message.member + ', **لماذا يجب علينا ان نقبلك ؟ اعطنا كود انت مسويه ؟🤔**' )
                                         m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m5) => {///n3k4a is one  
                                             m5 = m5.first();
                                             var ask3 = m5.content;
@@ -1766,7 +1766,7 @@ client.on("message", message => {
                         .addField('**`العمر`**', `${age}` , true)
                         .addField('**`هما هي لغه البرمجة الخاصه به ؟ `**',`${ask}`)///n3k4a is one  
                         .addField('**`*VarوCost هل يعرف الفرق بين `**',`${ask2}`)
-                        .addField('**`لماذا يجب علينا ان نقبلك ؟ اعطنا كودالشخص مسويه ؟🤔`**',`${ask3}`)
+                        .addField('**`لماذا يجب علينا ان نقبلك ؟ اعطنا كود انت مسويه ؟🤔`**',`${ask3}`)
                         .setFooter(message.author.username,'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')
                         channel.send(embed)
                         }, 2500);///n3k4a is one  
@@ -1793,7 +1793,7 @@ client.on("message", message => {
 		    if(!message.channel.guild) return;///n3k4a is one  
                 if(message.author.bot) return;
                 if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply("**تحتاج الى `MANAGE_CHANNELS`**");
-                message.guild.createChannel("✽-التقديمات", "text").then(c =>{
+                message.guild.createChannel("التقديمات", "text").then(c =>{
                     c.overwritePermissions(message.guild.id, {///n3k4a is one  
                         SEND_MESSAGES: false
 
@@ -1826,9 +1826,9 @@ if(!aUser) return msg.channel.send("Couldn't find users.");
     ac.send(`** [ @• Toxic » Support  ]تم بنجاح قبولك  واعطائك رتبة ${aUser}**`)
 
     msg.delete().catch(O_o=>{});
-    var role = msg.guild.roles.find(`name`, '• Toxic » Support');
-    var role2 = msg.guild.roles.find(`name`, '• Help » Github');
-    var role3 = msg.guild.roles.find(`name`, '• Help » Heroku');
+    var role = msg.guild.roles.find(`name`, 'Support');
+    var role2 = msg.guild.roles.find(`name`, 'Github');
+    var role3 = msg.guild.roles.find(`name`, 'Heroku');
     if(!role) return msg.guild.channel.send("Could't find `• Toxic » Support` role.");
     aUser.addRole(role);
     aUser.addRole(role2);
@@ -1895,7 +1895,7 @@ client.on('message',async message => {
                 })
     message.channel.send("**✅ تم انشاء روم القبول والرفض بنجاح**") ///n3k4a is one  
             }
-            })///n3k4a is one
+            })///Mazen is one
     
 
 
@@ -2234,7 +2234,7 @@ if(!message.channel.guild) return message.reply(' ');
 
           jscodes.send(`@everyone | @here
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-**Toxic Codes© ⬇**
+**Turbo Codes© ⬇**
 \`\`\`css
 ${thisMessage}\`\`\`
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2383,7 +2383,7 @@ if(!message.channel.guild) return message.reply(' ');
 
           jscodes.send(`@everyone | @here
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-**Toxic Codes© ⬇**
+**Turbo Codes© ⬇**
 \`\`\`css
 ${thisMessage}\`\`\`
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2419,7 +2419,7 @@ client.on('guildMemberAdd', member => {
     const ei = invites[member.guild.id];
     const invite = guildInvites.find(i => ei.get(i.code).uses < i.uses);
     const inviter = client.users.get(invite.inviter.id);
-    const stewart = member.guild.channels.find("name", "✽-welcome");
+    const stewart = member.guild.channels.find("name", "welcome");
      stewart.send(`<@${member.user.id}> تمت الدعوه من <@${inviter.id}>`);
    //  stewart.send(`<@${member.user.id}> joined using invite code ${invite.code} from <@${inviter.id}>. Invite was used ${invite.uses} times since its creation.`);
   });
@@ -2431,11 +2431,11 @@ client.on('message',async message => {
 
 if(!message.channel.guild) return message.reply(' ');
 
-  let rank = message.guild.member(message.author).roles.find('name', '• Toxic » Support');
+  let rank = message.guild.member(message.author).roles.find('name', 'Support');
 
   if (!rank) return message.channel.send('🛑 **| يجب ان تمتلك رتبة سبورت لأستخدام هذا الأمر.**');
 
-  let jscodes = message.guild.channels.find(`name`, "✽-code-php");
+  let jscodes = message.guild.channels.find(`name`, "code-php");
 
   if(!jscodes) return message.channel.send("❌لم اجد الروم الخاص بنشر الاكواد");
 
@@ -2543,7 +2543,7 @@ if(!message.channel.guild) return message.reply(' ');
 
           jscodes.send(`@everyone | @here
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-**Toxic Codes© ⬇**
+**Turbo Codes© ⬇**
 \`\`\`css
 ${thisMessage}\`\`\`
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
