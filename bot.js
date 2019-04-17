@@ -2146,61 +2146,6 @@ client.on ("guildMemberAdd", member => {
   
 })
 
- 
-
-
-
-
-client.on("message", msg => { //Turbo Codes
-  if(msg.author.bot) return;
-  if(msg.channel.type === 'dm') return;
-let prefix = '#'; //البرفكس
-let msgarray = msg.content.split(" ");
-let cmd = msgarray[0];
-let args = msgarray.slice(1);
-if(!msg.guild.member(msg.author).hasPermission("MANAGE_ROLES")) return;	
-if(cmd === `${prefix}قبول`){
-  
-  
-
-  let aUser = msg.guild.member(msg.mentions.users.first() || msg.guild.members.get(args[0]));
-if(!aUser) return msg.channel.send("Couldn't find users.");
-
-
-    
-    
-    let ac = msg.guild.channels.find(`name`,"القبول-الرفض"); 
-    if(!ac) return msg.channel.send("Couldn't find `القبول-الرفض` channel. "); 
-    ac.send(`** [ @Support  ]تم بنجاح قبولك  واعطائك رتبة ${aUser}**`)
-
-    msg.delete().catch(O_o=>{});
-    var role = msg.guild.roles.find(`name`, 'Support');
-    var role2 = msg.guild.roles.find(`name`, 'Help Github');
-    var role3 = msg.guild.roles.find(`name`, 'Help Heroku');
-    if(!role) return msg.guild.channel.send("Could't find `Support` role.");
-    aUser.addRole(role);
-    aUser.addRole(role2);
-    aUser.addRole(role3);
-    
-        return;
-    }
-    });
-
-client.on('message',async message => {
-  let mention = message.mentions.members.first();///n3k4a is one  
-  if(message.content.startsWith("#رفض")) {
-  if(!message.channel.guild) return;///n3k4a is one  
-  let acRoom = message.guild.channels.find('name', 'القبول-الرفض');
-  if(!acRoom) return message.reply("#روم2 من فضلك انشاء روم **القبول-الرفض** او اكتب الامر");
-  if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
-  if(!mention) return message.reply("منشن شخص");///n3k4a is one  
- 
-  acRoom.send(`**${mention} تم رفضك للاسف**`)
-  }
-});
-
-
-
 
 
 
