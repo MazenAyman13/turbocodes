@@ -3058,4 +3058,115 @@ client.on('message', message => {
     }
 });
 
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-bc") {
+          const embed = new Discord.RichEmbed()
+  
+
+   .setColor('RANDOM')
+  .setTimestamp()
+
+  .addField("⦁`All types of codes in Toxic CodesServer 💬`⦁",' ‎ ')
+  .addField("**#help-js-bc-1  ➺      ⦁ برودكاست + للكل + مطور **⦁",' ‎ ')
+  .addField("**#help-js-bc-2  ➺      ⦁ برودكاست + للكل + غير مطور ** ⦁",' ‎ ')
+  .addField("**#help-js-bc-3  ➺      ⦁ برودكاست + للأونلاين + مع منشن + غير مطور **⦁",' ‎ ')
+  .addField("**#help-js-bc-4  ➺      ⦁ برودكاست + للكل + مع منشن + غير مطور ** ⦁",' ‎ ')	   
+		   
+ .setFooter('Turbo Codes')
+
+
+   message.channel.send({embed});
+
+    }
+});
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+                              client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-1") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **برودكاست + للكل **
+ https:/pastebin.com/n2SyjdwH
+`);
+    }
+});
+
+
+
+                            client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-2") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **برودكاست + للكل + غير مطور**
+ https://pastebin.com/n2SyjdwH
+`);
+
+    }
+});
+
+
+
+
+                            client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-3") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ ** برودكاست + للأونلاين + مع منشن + غير مطور**
+ https://pastebin.com/n2SyjdwH
+`);
+
+    }
+});
+  
+  
+  
+  
+                              client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-4") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **برودكاست + للكل + مع منشن + غير مطور**
+ https://pastebin.com/n2SyjdwH
+`);
+
+    }
+});
+
 client.login(process.env.BOT_TOKEN);
