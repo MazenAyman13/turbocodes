@@ -2635,4 +2635,123 @@ https://pastebin.com/PfvYF1ak
   }
 });
 
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-source") {
+          const embed = new Discord.RichEmbed()
+  
+
+   .setColor('RANDOM')
+  .setTimestamp()
+
+  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("**#help-js-source-1  ➺      ⦁ السورس الأساسي**⦁",' ‎ ')
+   .addField("**#help-js-source-2  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
+     .addField("**#help-js-source-3  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
+	   .addField("**#help-js-source-4  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
+	 
+ .setFooter('Toxic Codes')
+
+
+   message.channel.send({embed});
+
+
+    }
+});
+  
+  
+  
+  client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-1") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود السورس الأساسي**
+ https://pastebin.com/xGu8E5jA
+`);
+
+    }
+});  
+  
+  client.on("message", message => {
+
+            if (message.content.startsWith(prefix + "bc4")) {
+                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+  let args = message.content.split(" ").slice(1);
+  var argresult = args.join(' '); 
+  message.guild.members.filter(m => m.presence.status !== 'all').forEach(m => {
+ m.send(`${argresult}\n ${m}`);
+})
+ message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'all').size}\` : عدد الاعضاء المستلمين`); 
+ message.delete(); 
+};     
+});
+  
+  
+    client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-2") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **السورس الأساسي مع الستريمنق ومعلومات البوت**
+ https://pastebin.com/rJCgs6he
+`);
+
+    }
+});  
+  
+  
+  
+  
+  
+      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-3") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **السورس الأساسي مع الواتشينق**
+ https://pastebin.com/pYgG5HRi
+`);
+
+    }
+});  
+  
+  
+  
+        client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-4") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **السورس الاساسي مع البنق**
+ https://pastebin.com/1pX8Zdrw
+`);
+
+    }
+});  
+
 client.login(process.env.BOT_TOKEN);
