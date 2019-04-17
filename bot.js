@@ -2260,7 +2260,7 @@ client.on('message',async message => {
  .addField("**#help-js-general-7  ➺      ⦁ كود صراحه** ⦁",' ‎ ')	  
 	  
 	  
- .setFooter('Toxic Codes')
+ .setFooter('Turbo Codes')
 
    message.channel.send({embed});
 
