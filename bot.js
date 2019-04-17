@@ -303,7 +303,7 @@ client.channels.get("532186350665859082").sendEmbed(embed)
 
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = ['*help | *invite','*help | *invite'];
+    var setGame = ['#help-js | #تقديم'];
     var i = -1;
     var j = 0;
     setInterval(function (){
