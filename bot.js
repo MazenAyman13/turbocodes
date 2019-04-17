@@ -2950,5 +2950,112 @@ client.on('message', message => {
     }
 });  
 
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-welcome") {
+          const embed = new Discord.RichEmbed()
+  
+
+   .setColor('RANDOM')
+  .setTimestamp()
+
+  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("**#help-js-welcome-1  ➺      ⦁ كود ترحيب مع ذكر رقم العضو **⦁",' ‎ ')
+   .addField("**#help-js-welcome-2  ➺      ⦁ كود الترحيب مع صورة ** ⦁",' ‎ ')
+     .addField("**#help-js-welcome-3  ➺      ⦁ كود مغادرة العضو ** ⦁",' ‎ ')
+	       .addField("**#help-js-welcome-4  ➺      ⦁ كود تم دعوته بواسطة ** ⦁",' ‎ ')
+
+	 
+		   
+ .setFooter('Turbo Codes')
+
+
+   message.channel.send({embed});
+
+    }
+});
+  
+  
+  
+  
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-1") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود ترحيب بصورة**
+ https://paste.drhack.net/?ded81e2b02cab246#Oej+XdoRpbGnlTET2iH2zKdVCn+WFNCUatLLtOU1urs=
+`);
+
+    }
+});
+  
+  
+  
+  
+                        client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-2") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود الترحيب في الخاص مع رقم العضو**
+ https://paste.drhack.net/?854e74d128b66da8#3menzqbk4bSRPItx7czUQhc1iuwjQRZTyaEVF6ZUktE=
+`);
+
+    }
+});
+
+
+
+
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-3") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖**كود مغادرة العضو**
+ https://pastebin.com/8Da43txR
+`);
+
+    }
+});
+  
+  
+  
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-4") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود تم دعوته بواسطة**
+ https://pastebin.com/ihCR8nhW
+`);
+
+    }
+});
 
 client.login(process.env.BOT_TOKEN);
