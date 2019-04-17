@@ -256,31 +256,7 @@ client.on("message", message => {
    }); 
    
 
-   client.on('message', message => {
-           var prefix = "#";
-    if (message.author.bot) return;
-     if (message.content  === prefix + "help-js-general") {
-          const embed = new Discord.RichEmbed()
-  
-
-   .setColor('RANDOM')
-   .setDescription(`
-
- ⦁`All types of codes in Toxic Codes Server 💬`
- `**#help-js-general-1  ➺      ⦁ كود البنق **⦁`
- `**#help-js-general-2  ➺      ⦁ كود القرعة ** ⦁`
- `**#help-js-general-3  ➺      ⦁ كود الافتار  ** ⦁`  
- `**#help-js-general-4  ➺      ⦁ كود معلومات السيرفر ** ⦁`
- `**#help-js-general-5  ➺      ⦁ كود المعلومات الشخصية** ⦁`
- `**#help-js-general-6  ➺      ⦁ كود كت تويت** `	  
- `**#help-js-general-7  ➺      ⦁ كود صراحه** ⦁`	  
-	  
-	  
-         `)
-   message.channel.sendEmbed(embed)
-    
-   }
-   });
+   
    
 
 
