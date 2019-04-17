@@ -235,19 +235,13 @@ client.on("message", message => {
       .setColor("#8325c0") 
       .setDescription(`
 	  
-	     List Cods
-
-			 
-#help-js-general ⥨ اكواد الاوامر العامية
-
-#help-js-admin ⥨ اكواد الاوامر الادمنية
-			 
-#help-js-games ⥨ اكواد اللعب
-
-#help-js-music ⥨ اكواد الميوزك
-
-© Turbo Codes حقوق النشر لـ 
-
+	     ❧ #help-js-source ➺ ⦁ قسم السورس الأساسي 
+             ❧ #help-js-admin ➺ ⦁ قسم الأكواد الإدارية 
+             ❧ #help-js-general ➺ ⦁ قسم الأكواد العامة
+             ❧ #help-js-welcome ➺ ⦁ قسم أكواد الترحيب 	 	
+             ❧ #help-js-help ➺ ⦁ قسم أكواد الهلب 
+             ❧ #help-js-bc ➺ ⦁ قسم أكواد البرودكاست 
+             ❧ #help-js-games  ➺ ⦁ قسم أكواد الالعاب
 
 	  `)
    message.channel.sendEmbed(embed)
