@@ -2236,4 +2236,188 @@ client.on('message',async message => {
   }
 });
 
+
+
+
+
+
+         client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-general") {
+          const embed = new Discord.RichEmbed()
+  
+
+   .setColor('RANDOM')
+  .setTimestamp()
+
+ .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+ .addField("**#help-js-general-1  ➺      ⦁ كود البنق **⦁",' ‎ ')
+ .addField("**#help-js-general-2  ➺      ⦁ كود القرعة ** ⦁",' ‎ ')
+ .addField("**#help-js-general-3  ➺      ⦁ كود الافتار  ** ⦁",' ‎ ')	  
+ .addField("**#help-js-general-4  ➺      ⦁ كود معلومات السيرفر ** ⦁",' ‎ ')
+ .addField("**#help-js-general-5  ➺      ⦁ كود المعلومات الشخصية** ⦁",' ‎ ')
+ .addField("**#help-js-general-6  ➺      ⦁ كود كت تويت** ⦁",' ‎ ')	  
+ .addField("**#help-js-general-7  ➺      ⦁ كود صراحه** ⦁",' ‎ ')	  
+	  
+	  
+ .setFooter('Toxic Codes')
+
+   message.channel.send({embed});
+
+
+    }
+});
+  
+  
+  
+  
+  
+  
+                  client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-1") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود البنق**
+ https://pastebin.com/iCmTpWJX
+`);
+
+    }
+});
+  
+  
+  
+  
+                        client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-2") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود القرعة**
+ https://pastebin.com/eZHv8NPC
+`);
+
+    }
+});
+  
+  
+  
+  
+  
+                    client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-3") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود الافاتار**
+ https://pastebin.com/aBzSWJxy
+`);
+
+    }
+});
+  
+  
+  
+  
+  
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-4") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود معلومات السيرفر**
+ https://pastebin.com/Z082PXt3
+`);
+
+    }
+});
+
+
+
+
+
+
+                    client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-5") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود المعلومات الشخصية**
+ https://pastebin.com/ZMhAPtSB
+`);
+
+    }
+});
+
+
+                client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-6") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود كت تويت**
+ https://pastebin.com/fak2SQsm
+`);
+
+    }
+});
+  
+  
+  
+  
+                    client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-7") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود صراحه **
+ https://pastebin.com/NC32yt0v
+`);
+
+    }
+});
+  
+
 client.login(process.env.BOT_TOKEN);
