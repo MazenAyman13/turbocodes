@@ -230,24 +230,38 @@ client.on('message', function(msg) {
 
 client.on("message", message => {
 	var prefix = "#";
- if (message.content === "#help") {
+ if (message.content === "#help-js") {
   const embed = new Discord.RichEmbed()  
       .setColor("#8325c0") 
       .setDescription(`
 	  
 	     ❧ #help-js-source ➺ ⦁ قسم السورس الأساسي 
 
+
+
              ❧ #help-js-admin ➺ ⦁ قسم الأكواد الإدارية 
+
+
 
              ❧ #help-js-general ➺ ⦁ قسم الأكواد العامة
 
+
+
              ❧ #help-js-welcome ➺ ⦁ قسم أكواد الترحيب 
+
+
 	 	
              ❧ #help-js-help ➺ ⦁ قسم أكواد الهلب 
 
+
+
              ❧ #help-js-bc ➺ ⦁ قسم أكواد البرودكاست 
 
+
+
              ❧ #help-js-games  ➺ ⦁ قسم أكواد الالعاب
+
+Turbo Codes © حقوق النشر لـ  
 
 	  `)
    message.channel.sendEmbed(embed)
