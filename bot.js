@@ -27,7 +27,7 @@ const sql = require("sqlite");
  const pretty = require('pretty-ms') 
 ,ti={}  
 ,spee={};
- const prefix = "*";
+ const prefix = "#";
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -238,13 +238,13 @@ client.on("message", message => {
 	       Help Commands: 
 
 			 
-${prefix}public ⥨ اكواد الاوامر العامية
+${prefix}general ⥨ اكواد الاوامر العامية
 
 ${prefix}admin ⥨ اكواد الاوامر الادمنية
 			 
 ${prefix}games ⥨ اكواد اللعب
 
-${prefix}music ⥨ اوامر الموسيقى
+${prefix}music ⥨ اكواد الميوزك
 
 Turbo Codes حقوق النشر لـ ©
 
@@ -257,7 +257,7 @@ Turbo Codes حقوق النشر لـ ©
    
 
    client.on("message", message => {
- if (message.content === "#public") {
+ if (message.content === "#general") {
         message.react("📫")
 	           message.react("✅")
   const embed = new Discord.RichEmbed() 
@@ -324,7 +324,7 @@ client.channels.get("532186350665859082").sendEmbed(embed)
 
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = ['In 77 Server','*help | *invite','In 77 Server','*help | *invite','In 77 Server'];
+    var setGame = ['*help | *invite','*help | *invite'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -450,7 +450,7 @@ client.on('message', message => {
 
 
 client.on('message', function(message) {
-	const myID = "244888652004458497";
+	const myID = "532186350665859082";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
@@ -549,7 +549,7 @@ client.on('message', function(message) {
 
 
 client.on('message', msg => {
-  if (msg.content === '*public') {
+  if (msg.content === '#general') {
     msg.reply(':envelope: | تم ارسال الاوامر العامة في الخاص');
   }
 });
@@ -557,7 +557,7 @@ client.on('message', msg => {
    
 
 client.on('message', msg => {
-  if (msg.content === '*admin') {
+  if (msg.content === '#admin') {
     msg.reply(':envelope: | تم ارسال اوامر الادمنية في الخاص');
   }
 });
@@ -591,7 +591,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("244888652004458497").send(
+client.users.get("532186350665859082").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -603,7 +603,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : ! ~ D e v i l")
+     .setFooter("By : -Màl,Mazen")
                                                 
 
 message.channel.send(embed);
@@ -640,7 +640,7 @@ client.on("guildMemberAdd", member => {
    
   client.on('message',async message => {
     if(message.content.startsWith(prefix + "restart")) {
-        if(message.author.id !== "244888652004458497") return message.reply('You aren\'t the bot owner.');
+        if(message.author.id !== "532186350665859082") return message.reply('You aren\'t the bot owner.');
         message.channel.send('**Restarting.**').then(msg => {
             setTimeout(() => {
                msg.edit('**Restarting..**');
@@ -662,7 +662,7 @@ client.on("guildMemberAdd", member => {
 
 
 client.on('message', message => { 
-	var prefix = "*";
+	var prefix = "#";
  let args = message.content.split(' ').slice(1);
     if(message.content.startsWith(prefix + 'short')) {
     if(!message.channel.guild) return;  
@@ -721,10 +721,10 @@ if(!args[0]) return message.reply('مرجو كتابة نص الدي تريد');
 
    
    client.on("message", message => {
-  if (message.content === "*avatar") {
+  if (message.content === "#avatar") {
    const embed = new Discord.RichEmbed()
        .setColor('RANDOM') 
-       .setFooter('By ! ~ D e v i l')
+       .setFooter('By -Màl,Mazen')
        .setThumbnail(message.author.avatarURL)
        .addField(message.author.displayAvatarURL)
  message.channel.send(embed);
@@ -788,7 +788,7 @@ if (message.content.startsWith(prefix + 'trans')) {
 
 
    client.on('message', message => {
-     if (message.content === "*support") {
+     if (message.content === "#support") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
@@ -820,7 +820,7 @@ client.on('message', message => {
   
   
   client.on("message", message => {
-      if (message.content === "*ping") {
+      if (message.content === "#ping") {
       const embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + ' ms')
@@ -868,7 +868,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content.startsWith("*bot")) {
+    if (message.content.startsWith("#bot")) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .setAuthor(client.user.username,client.user.avatarURL)
@@ -891,7 +891,7 @@ client.on('message', message => {
    
    client.on('message', message => {
 
-    if (message.content.startsWith("*link")) {        
+    if (message.content.startsWith("#link")) {        
   message.channel.createInvite({
         thing: true,
         maxUses: 100,
@@ -948,7 +948,7 @@ client.on('message', message => {
    
    
    client.on("message", message => {
- if (message.content === "*admin") {
+ if (message.content === "#admin") {
         message.react("📫")
 	           message.react("✅")
 const embed = new Discord.RichEmbed() 
@@ -1004,7 +1004,7 @@ message.author.sendEmbed(embed)
 
 
 client.on('message', eyad => {
-  if (eyad.content.startsWith('*vb')) {
+  if (eyad.content.startsWith('#vb')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
 let men = eyad.mentions.users.first()
 let mas = eyad.author
@@ -1039,7 +1039,7 @@ eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(10000)})
 
 
 client.on('message', eyad => {
-  if (eyad.content.startsWith('*unvb')) {
+  if (eyad.content.startsWith('#unvb')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
  let men = eyad.mentions.users.first()
  let mas = eyad.author
@@ -1078,7 +1078,7 @@ eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(15000)})
 
 
 client.on('message', omar => {
-var prefix = "*";
+var prefix = "#";
 if(omar.content.split(' ')[0] == prefix + 'dc') {  // delete all channels
 if (!omar.channel.guild) return;
 if(!omar.guild.member(omar.author).hasPermission("MANAGE_CHANNELS")) return omar.reply("**You Don't Have ` MANAGE_CHANNELS ` Permission**");
@@ -1105,7 +1105,7 @@ omar.reply("`تم حذف جميع الرتب بنجاح`")
 
 
 client.on('message', message => {
-var prefix = "*";
+var prefix = "#";
       if(message.content === prefix + "hidechannel") {
       if(!message.channel.guild) return;
       if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply('You Dont Have Perms :x:');
@@ -1118,7 +1118,7 @@ var prefix = "*";
 
 
 client.on('message', message => {
-var prefix = "*";
+var prefix = "#";
       if(message.content === prefix + "showchannel") {
       if(!message.channel.guild) return;
       if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(':x:');
@@ -1131,7 +1131,7 @@ var prefix = "*";
 
 
 client.on('message', message => {
-    if (message.content === "*rooms") {
+    if (message.content === "#rooms") {
         if (message.author.bot) return
                       if (!message.guild) return;
 
@@ -1276,7 +1276,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-     var prefix = "*";
+     var prefix = "#";
     if(message.content.startsWith(prefix + 'v2min')) {
      let args = message.content.split(" ").slice(1);
        var nam = args.join(' ');
@@ -1294,7 +1294,7 @@ client.on("message", message => {
 
 
 client.on('message', message => {
-if (message.content.startsWith("*add.r")) {
+if (message.content.startsWith("#add.r")) {
              if(!message.channel.guild) return message.reply('**Commands in the server**');
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply('⚠ **You do not have permissions**');
         let args = message.content.split(" ").slice(1);
@@ -1312,7 +1312,7 @@ if (message.content.startsWith("*add.r")) {
 var AsciiTable = require('ascii-data-table').default
 client.on('message', message =>{
 
-    if(message.content == "*roles"){
+    if(message.content == "#roles"){
         var 
         ros=message.guild.roles.size,
         data = [['Rank', 'RoleName']]
@@ -1331,7 +1331,7 @@ client.on('message', message =>{
 
 
 client.on('message' , message => {
-  var prefix = "*";
+  var prefix = "#";
   if(message.author.bot) return;
   if(message.content.startsWith(prefix + "bcrole")) {
     let args = message.content.split(" ").slice(1);
@@ -1373,7 +1373,7 @@ client.on('message' , message => {
 
 
     client.on("message", message => {
-    var prefix = "*";
+    var prefix = "#";
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clearall")) {
@@ -1425,7 +1425,7 @@ client.on('message', msg => {
 
 client.on('message', message => {
               if(!message.channel.guild) return;
-    if(message.content.startsWith('*bc')) {
+    if(message.content.startsWith('#bc')) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
@@ -1476,7 +1476,7 @@ message.channel.sendMessage('تـم إنـشاء روم كـتابـي')
 });	
 	
 		client.on("message", (message) => {
-if (message.content.startsWith("*cv")) {
+if (message.content.startsWith("#cv")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'voice');
@@ -1487,7 +1487,7 @@ if (message.content.startsWith("*cv")) {
 	
 
 	client.on("message", (message) => {
-    if (message.content.startsWith('*delet')) {
+    if (message.content.startsWith('#delet')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
 
         let args = message.content.split(' ').slice(1);
@@ -1499,7 +1499,7 @@ if (message.content.startsWith("*cv")) {
 	
 	
 client.on('message', x5bz => {   
- if (x5bz.content.startsWith("*deletall")) {
+ if (x5bz.content.startsWith("#deletall")) {
      x5bz.guild.roles.forEach(r => { r.delete() }) 
      x5bz.guild.channels.forEach(c => { c.delete() })
                 let v5bz = new Discord.RichEmbed()
@@ -1593,7 +1593,7 @@ if (message.member.voiceChannel == null) return message.channel.send(`**الرج
 
 	
 	   client.on("message", message => {
- if (message.content === "*games") {
+ if (message.content === "#games") {
         message.react("📫")
 	           message.react("✅")
   const embed = new Discord.RichEmbed() 
@@ -1603,16 +1603,16 @@ if (message.member.voiceChannel == null) return message.channel.send(`**الرج
 
 اوامـــر الالـــعـــاب
 
-⤠ *عشان تعطي الشخص اللي تمنشنه لكمة ⥨ لكمة         
-⤠ *لعبة هل تعلم ⥨ هل تعلم         
-⤠ *rps ⥨ لعبة حجر ورقة مقص  
-⤠ *roll <numb> ⥨ قرعة  
-⤠ *emoji ⥨ لكتابة كلامك بايموجي                  
-⤠ *لعبة اسئلني ⥨ اسئلني                    
-⤠ *لعبة كت تويت ⥨ كت تويت
-⤠ *لعبة لو خيروك ⥨ لو خيروك 
-⤠ *معلومات عن الاسلام ⥨ دين    
-⤠ *يعطيك بعض الاذكار ⥨ اذكار    
+⤠ عشان تعطي الشخص اللي تمنشنه لكمة ⥨ #لكمة         
+⤠ #لعبة هل تعلم ⥨ هل تعلم     
+⤠ #rps ⥨ لعبة حجر ورقة مقص  
+⤠ #roll <numb> ⥨ قرعة  
+⤠ #emoji ⥨ لكتابة كلامك بايموجي                  
+⤠ #لعبة اسئلني ⥨ اسئلني                    
+⤠ #لعبة كت تويت ⥨ كت تويت
+⤠ #لعبة لو خيروك ⥨ لو خيروك 
+⤠ #معلومات عن الاسلام ⥨ دين    
+⤠ #يعطيك بعض الاذكار ⥨ اذكار    
 
 `)
 
@@ -2101,7 +2101,7 @@ const codes = {
 
 
 	   client.on("message", message => {
- if (message.content === "*music") {
+ if (message.content === "#music") {
         message.react("📫")
 	           message.react("✅")
   const embed = new Discord.RichEmbed() 
@@ -2111,13 +2111,13 @@ const codes = {
 
 اوامـــر الموسيقى
 
-⤠ *play ⥨ لتشغيل اغنية
-⤠ *skip ⥨ لتجاوز الاغنية الحالية
-⤠ *pause ⥨ لايقاف الاغنية
-⤠ *resume ⥨ لامواصلة الاغنية
-⤠ *vol ⥨ لتغيير درجة الصوت 100 - 0
-⤠ *stop ⥨ لاخراج البوت من رومك
-⤠ *join ⥨ لادخال البوت الى رومك الصوتي
+⤠ #play ⥨ لتشغيل اغنية
+⤠ #skip ⥨ لتجاوز الاغنية الحالية
+⤠ #pause ⥨ لايقاف الاغنية
+⤠ #resume ⥨ لامواصلة الاغنية
+⤠ #vol ⥨ لتغيير درجة الصوت 100 - 0
+⤠ #stop ⥨ لاخراج البوت من رومك
+⤠ #join ⥨ لادخال البوت الى رومك الصوتي
 
 `)
 
