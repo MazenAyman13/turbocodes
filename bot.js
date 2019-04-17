@@ -2650,7 +2650,7 @@ client.on('message', message => {
      .addField("**#help-js-source-3  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
 	   .addField("**#help-js-source-4  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
 	 
- .setFooter('Toxic Codes')
+ .setFooter('Turbo Codes')
 
 
    message.channel.send({embed});
@@ -2679,19 +2679,7 @@ client.on('message', message => {
     }
 });  
   
-  client.on("message", message => {
-
-            if (message.content.startsWith(prefix + "bc4")) {
-                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-  let args = message.content.split(" ").slice(1);
-  var argresult = args.join(' '); 
-  message.guild.members.filter(m => m.presence.status !== 'all').forEach(m => {
- m.send(`${argresult}\n ${m}`);
-})
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'all').size}\` : عدد الاعضاء المستلمين`); 
- message.delete(); 
-};     
-});
+  
   
   
     client.on('message', message => {
@@ -2753,5 +2741,214 @@ client.on('message', message => {
 
     }
 });  
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-admin") {
+          const embed = new Discord.RichEmbed()
+  
+
+   .setColor('RANDOM')
+  .setTimestamp()
+
+ .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+ .addField("**#help-js-admin-1  ➺      ⦁ كود الباند**⦁",' ‎ ')
+ .addField("**#help-js-admin-2  ➺      ⦁ كود الكيك** ⦁",' ‎ ')
+ .addField("**#help-js-admin-3  ➺      ⦁ كود مسح الشات مع عدد وشبيه بالبروبوت** ⦁",' ‎ ')
+ .addField("**#help-js-admin-4  ➺      ⦁ كود فتح وتقفيل الشات** ⦁",' ‎ ')
+ .addField("**#help-js-admin-5  ➺      ⦁  كود رابط يرسله خاص ل 100شخص لمدة 24 ساعه** ⦁",' ‎ ')
+ .addField("**#help-js-admin-6  ➺      ⦁  كود لانشاء شات كتابي** ⦁",' ‎ ')	  
+ .addField("**#help-js-admin-7  ➺      ⦁  كود لانشاء روم صوتي** ⦁",' ‎ ')
+ .addField("**#help-js-admin-8  ➺      ⦁  invite : كود دعوه البوت مثال ** ⦁",' ‎ ')	  
+ .addField("**#help-js-admin-9  ➺ ⦁  كود الاوتو رول التفعيل داخل السيرفر ** ⦁",' ‎ ')
+	  
+	  
+	  
+ .setFooter('Turbo Codes')
+
+
+   message.channel.send({embed});
+
+
+    }
+});
+  
+  
+  
+          client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-1") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود الباند**
+ https://pastebin.com/YZAXKYUB
+`);
+
+    }
+});  
+  
+  
+  
+  
+            client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-2") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود الكيك**
+ https://pastebin.com/0cNVLm1a
+`);
+
+    }
+});  
+  
+  
+
+              client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-3") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود مسح الشات ( الكلير ) نفس سبيد بوت**
+ https://pastebin.com/QERKkTtk
+`);
+
+    }
+});  
+  
+  
+  
+  
+  
+                client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-4") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود فتح وتقفيل الشات**
+ https://pastebin.com/gb4me9bS
+`);
+
+    }
+});  
+
+
+                  client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-5") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ ** كود رابط يرسله خاص ل 100شخص لمدة 24 ساعه**
+ https://pastebin.com/Xe5kzVUw
+`);
+
+    }
+});
+  
+         client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-6") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ ** كود لانشاء شات كتابي**
+ https://pastebin.com/ChtbaGu2
+`);
+
+    }
+});
+  
+           client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-7") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ ** كود لانشاء روم صوتي**
+ https://pastebin.com/Y2SWEE6N
+`);
+
+    }
+});
+
+
+
+          client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-8") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **invite : كود دعوه البوت مثال **
+ https://pastebin.com/hP9VQpFR
+`);
+
+    }
+});  
+
+
+          client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-9") {
+		 message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+            
+	
+		 
+
+
+ message.author.sendMessage(`
+ 
+ ❖ **كود الاوتو رول التفعيل داخل السيرفر **
+ https://pastebin.com/7tVEa317
+`);
+
+    }
+});  
+
 
 client.login(process.env.BOT_TOKEN);
