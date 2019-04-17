@@ -2141,7 +2141,7 @@ hisMessage}\`\`\`
 
 client.on ("guildMemberAdd", member => {
   
-   var role = member.guild.roles.find ("name", "• Toxic » Member");
+   var role = member.guild.roles.find ("name", "Member");
    member.addRole (role);
   
 })
@@ -2153,8 +2153,8 @@ client.on("message", message => {
             if(message.content.startsWith("#تقديم")) {
 		if(!message.channel.guild) return;
                 if(message.author.bot) return;
-	    let channel = message.guild.channels.find("name", "✽-التقديمات")///n3k4a is one  
-            if(!channel) return message.reply("**لانشاء روم ✽-التقديمات !!setsubmissions من فضلك اكتب الامر**")
+	    let channel = message.guild.channels.find("name", "التقديمات")///n3k4a is one  
+            if(!channel) return message.reply("**لإنشاء روم ✽-التقديمات !!setsubmissions من فضلك اكتب الامر**")
             if(channel) {
             message.channel.send( message.member + ', **:timer:**').then( (m) =>{
               m.edit( message.member + ', **اسمك الحقيقى بالكامل ✍**' )///n3k4a is one  
