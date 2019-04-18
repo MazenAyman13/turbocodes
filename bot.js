@@ -63,7 +63,7 @@ client.on('message', message => {
    .setColor('RANDOM')
   .setTimestamp()
  
-  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("⦁`All types of codes in Turbo Codes Server 💬`⦁",' ‎ ')
   .addField("❧  **#help-js-source    ➺      ⦁ قسم السورس الأساسي** ⦁",' ‎ ')
    .addField("❧  **#help-js-admin     ➺      ⦁ قسم الأكواد الإدارية** ⦁",' ‎ ')
      .addField("❧  **#help-js-general   ➺      ⦁ قسم الأكواد العامة*** ⦁",' ‎ ')
