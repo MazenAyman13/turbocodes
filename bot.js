@@ -95,7 +95,7 @@ client.on('message', message => {
      .addField("**#help-js-source-3  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
        .addField("**#help-js-source-4  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
      
- .setFooter('Toxic Codes')
+ .setFooter('Turbo Codes')
  
  
    message.channel.send({embed});
@@ -221,7 +221,7 @@ client.on('message', message => {
      
      
      
- .setFooter('Toxic Codes')
+ .setFooter('Turbo Codes')
  
  
    message.channel.send({embed});
@@ -431,7 +431,7 @@ client.on('message', message => {
  .addField("**#help-js-general-7  ➺      ⦁ كود صراحه** ⦁",' ‎ ')     
      
      
- .setFooter('Toxic Codes')
+ .setFooter('Turbo Codes')
  
    message.channel.send({embed});
  
@@ -611,7 +611,7 @@ client.on('message', message => {
  
      
            
- .setFooter('Toxic Codes')
+ .setFooter('Turbo Codes')
  
  
    message.channel.send({embed});
@@ -717,7 +717,7 @@ client.on('message', message => {
   .addField("**#help-js-help-1  ➺      ⦁ كود هلب مع امبد يرسل بنفس الشات **⦁",' ‎ ')
    .addField("**#help-js-help-2  ➺      ⦁ كود هلب مزخرف بدون امبد ويرسل عالخاص ** ⦁",' ‎ ')
            
- .setFooter('Toxic Codes')
+ .setFooter('Turbo Codes')
  
  
    message.channel.send({embed});
@@ -785,7 +785,7 @@ client.on('message', message => {
   .addField("**#help-js-bc-3  ➺      ⦁ برودكاست + للأونلاين + مع منشن + غير مطور **⦁",' ‎ ')
   .addField("**#help-js-bc-4  ➺      ⦁ برودكاست + للكل + مع منشن + غير مطور ** ⦁",' ‎ ')      
            
- .setFooter('Toxic Codes')
+ .setFooter('Turbo Codes')
  
  
    message.channel.send({embed});
@@ -881,6 +881,303 @@ client.on('message', message => {
  
     }
 });
+
+client.on('message',async message => {
+ 
+  if(message.content.startsWith(prefix + "js")) {
+ 
+if(!message.channel.guild) return message.reply(' ');
+ 
+  let rank = message.guild.member(message.author).roles.find('name', 'Support', 'Support Plus');
+ 
+  if (!rank) return message.channel.send('🛑 **| يجب ان تمتلك رتبة سبورت لأستخدام هذا الأمر.**');
+ 
+  let jscodes = message.guild.channels.find(`name`, "✽-discord-js");
+ 
+  if(!jscodes) return message.channel.send("❌لم اجد الروم الخاص بنشر الاكواد");
+ 
+    let filter = m => m.author.id === message.author.id;
+ 
+    let thisMessage;
+ 
+    let thisFalse;
+ 
+    message.channel.send('📝 **| من فضلك اكتب الكود الأن... ✏ **').then(msg => {
+ 
+ 
+ 
+    message.channel.awaitMessages(filter, {
+ 
+      max: 1,
+ 
+      time: 90000,
+ 
+      errors: ['time']
+ 
+    })
+ 
+    .then(collected => {
+ 
+      collected.first().delete();
+ 
+      thisMessage = collected.first().content;
+ 
+      let boi;
+ 
+      msg.edit('📜 **| من فضلك اكتب وصف الكود الأن... ✏ **').then(msg => {
+ 
+ 
+ 
+          message.channel.awaitMessages(filter, {
+ 
+            max: 1,
+ 
+            time: 90000,
+ 
+            errors: ['time']
+ 
+          })
+ 
+          .then(collected => {
+ 
+            collected.first().delete();
+ 
+            boi = collected.first().content;
+ 
+            let boi2;
+ 
+            msg.edit('🤵 **| من فضلك اكتب من صنع هذا الكود الأن... ✏ **').then(msg => {
+ 
+ 
+ 
+              message.channel.awaitMessages(filter, {
+ 
+                max: 1,
+ 
+                time: 90000,
+ 
+                errors: ['time']
+ 
+              })
+ 
+              .then(collected => {
+ 
+                collected.first().delete();
+ 
+              boi2 = collected.first().content;
+ 
+      msg.edit('🛡 **| [ هل انت متأكد من نشر الكود؟ | [ نعم ] او [ لا**');
+ 
+ message.channel.awaitMessages(response => response.content === 'نعم' || 'لا' && filter,{
+ 
+        max: 1,
+ 
+        time: 90000,
+ 
+        errors: ['time']
+ 
+      })
+ 
+      .then(collected => {
+ 
+        if(collected.first().content === 'لا') {
+ 
+          msg.delete();
+ 
+          message.delete();
+ 
+          thisFalse = false;
+ 
+        }
+ 
+        if(collected.first().content === 'نعم') {
+ 
+          if(thisFalse === false) return;
+ 
+          msg.edit('🕊 **| Done ✅, تم بنجاح نشر كودك في روم الاكواد**');
+ 
+          collected.first().delete();
+ 
+          jscodes.send(`@everyone | @here
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**Turbo Codes© ⬇**
+\`\`\`css
+${thisMessage}\`\`\`
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**وصف الكود**: ${boi}
+**تم النشر بواسطة**: ${message.author}
+**المصدر / الشخص الذي صنع الكود**: ${boi2}`);
+ 
+        }
+ 
+      }
+ 
+  );
+ 
+});
+ 
+    });
+ 
+  }
+ 
+    );
+ 
+  });
+ 
+}
+ 
+);
+ 
+    })}});
+ 
+client.on('message',async message => {
+ 
+  if(message.content.startsWith(prefix + "html")) {
+ 
+if(!message.channel.guild) return message.reply(' ');
+ 
+  let rank = message.guild.member(message.author).roles.find('name', 'Support', 'Support Plus');
+ 
+  if (!rank) return message.channel.send('🛑 **| يجب ان تمتلك رتبة سبورت لأستخدام هذا الأمر.**');
+ 
+  let jscodes = message.guild.channels.find(`name`, "discord-html");
+ 
+  if(!jscodes) return message.channel.send("❌لم اجد الروم الخاص بنشر الاكواد");
+ 
+    let filter = m => m.author.id === message.author.id;
+ 
+    let thisMessage;
+ 
+    let thisFalse;
+ 
+    message.channel.send('📝 **| من فضلك اكتب الكود الأن... ✏ **').then(msg => {
+ 
+ 
+ 
+    message.channel.awaitMessages(filter, {
+ 
+      max: 1,
+ 
+      time: 90000,
+ 
+      errors: ['time']
+ 
+    })
+ 
+    .then(collected => {
+ 
+      collected.first().delete();
+ 
+      thisMessage = collected.first().content;
+ 
+      let boi;
+ 
+      msg.edit('📜 **| من فضلك اكتب وصف الكود الأن... ✏ **').then(msg => {
+ 
+ 
+ 
+          message.channel.awaitMessages(filter, {
+ 
+            max: 1,
+ 
+            time: 90000,
+ 
+            errors: ['time']
+ 
+          })
+ 
+          .then(collected => {
+ 
+            collected.first().delete();
+ 
+            boi = collected.first().content;
+ 
+            let boi2;
+ 
+            msg.edit('🤵 **| من فضلك اكتب من صنع هذا الكود الأن... ✏ **').then(msg => {
+ 
+ 
+ 
+              message.channel.awaitMessages(filter, {
+ 
+                max: 1,
+ 
+                time: 90000,
+ 
+                errors: ['time']
+ 
+              })
+ 
+              .then(collected => {
+ 
+                collected.first().delete();
+ 
+              boi2 = collected.first().content;
+ 
+      msg.edit('🛡 **| [ هل انت متأكد من نشر الكود؟ | [ نعم ] او [ لا**');
+ 
+ message.channel.awaitMessages(response => response.content === 'نعم' || 'لا' && filter,{
+ 
+        max: 1,
+ 
+        time: 90000,
+ 
+        errors: ['time']
+ 
+      })
+ 
+      .then(collected => {
+ 
+        if(collected.first().content === 'لا') {
+ 
+          msg.delete();
+ 
+          message.delete();
+ 
+          thisFalse = false;
+ 
+        }
+ 
+        if(collected.first().content === 'نعم') {
+ 
+          if(thisFalse === false) return;
+ 
+          msg.edit('🕊 **| Done ✅, تم بنجاح نشر كودك في روم الاكواد**');
+ 
+          collected.first().delete();
+ 
+          jscodes.send(`@everyone | @here
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**Turbo Codes© ⬇**
+\`\`\`css
+${thisMessage}\`\`\`
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**وصف الكود**: ${boi}
+**تم النشر بواسطة**: ${message.author}
+**المصدر / الشخص الذي صنع الكود**: ${boi2}`);
+ 
+        }
+ 
+      }
+ 
+  );
+ 
+});
+ 
+    });
+ 
+  }
+ 
+    );
+ 
+  });
+ 
+}
+ 
+);
+ 
+    })}});
+ 
 
  client.on("message", message => {
             if(message.content.startsWith("#تقديم")) {
