@@ -54,7 +54,31 @@ client.on('ready', () => {
   console.log('')
 });
 
-
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("❧  **#help-js-source    ➺      ⦁ قسم السورس الأساسي** ⦁",' ‎ ')
+   .addField("❧  **#help-js-admin     ➺      ⦁ قسم الأكواد الإدارية** ⦁",' ‎ ')
+     .addField("❧  **#help-js-general   ➺      ⦁ قسم الأكواد العامة*** ⦁",' ‎ ')
+       .addField("❧  **#help-js-welcome   ➺      ⦁ قسم أكواد الترحيب** ⦁",' ‎ ')
+           .addField("❧  **#help-js-help      ➺      ⦁ قسم أكواد الهلب** ⦁",' ‎ ')
+            .addField("❧  **#help-js-bc        ➺      ⦁ قسم أكواد البرودكاست** ⦁",' ‎ ')
+                 .addField("❧  **#help-js-games        ➺      ⦁ قسم اكواد الالعاب** ⦁",' ‎ ')
+ .setFooter('Toxic Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+ 
+    }
+});
 
 
  client.on("message", message => {
