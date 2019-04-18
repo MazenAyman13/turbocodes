@@ -892,7 +892,7 @@ if(!message.channel.guild) return message.reply(' ');
  
   if (!rank) return message.channel.send('🛑 **| يجب ان تمتلك رتبة سبورت لأستخدام هذا الأمر.**');
  
-  let jscodes = message.guild.channels.find(`name`, "✽-discord-js");
+  let jscodes = message.guild.channels.find(`name`, "discord-js");
  
   if(!jscodes) return message.channel.send("❌لم اجد الروم الخاص بنشر الاكواد");
  
