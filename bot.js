@@ -80,6 +80,807 @@ client.on('message', message => {
     }
 });
 
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-source") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("**#help-js-source-1  ➺      ⦁ السورس الأساسي**⦁",' ‎ ')
+   .addField("**#help-js-source-2  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
+     .addField("**#help-js-source-3  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
+       .addField("**#help-js-source-4  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
+     
+ .setFooter('Toxic Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+ 
+    }
+});
+ 
+ 
+ 
+  client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود السورس الأساسي**
+ https://pastebin.com/xGu8E5jA
+`);
+ 
+    }
+});  
+ 
+  client.on("message", message => {
+ 
+            if (message.content.startsWith(prefix + "bc4")) {
+                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+  let args = message.content.split(" ").slice(1);
+  var argresult = args.join(' ');
+  message.guild.members.filter(m => m.presence.status !== 'all').forEach(m => {
+ m.send(`${argresult}\n ${m}`);
+})
+ message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'all').size}\` : عدد الاعضاء المستلمين`);
+ message.delete();
+};    
+});
+ 
+ 
+    client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **السورس الأساسي مع الستريمنق ومعلومات البوت**
+ https://pastebin.com/rJCgs6he
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+ 
+ 
+      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-3") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **السورس الأساسي مع الواتشينق**
+ https://pastebin.com/pYgG5HRi
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+        client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-4") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **السورس الاساسي مع البنق**
+ https://pastebin.com/1pX8Zdrw
+`);
+ 
+    }
+});  
+
+ client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-admin") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+ .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+ .addField("**#help-js-admin-1  ➺      ⦁ كود الباند**⦁",' ‎ ')
+ .addField("**#help-js-admin-2  ➺      ⦁ كود الكيك** ⦁",' ‎ ')
+ .addField("**#help-js-admin-3  ➺      ⦁ كود مسح الشات مع عدد وشبيه بالبروبوت** ⦁",' ‎ ')
+ .addField("**#help-js-admin-4  ➺      ⦁ كود فتح وتقفيل الشات** ⦁",' ‎ ')
+ .addField("**#help-js-admin-5  ➺      ⦁  كود رابط يرسله خاص ل 100شخص لمدة 24 ساعه** ⦁",' ‎ ')
+ .addField("**#help-js-admin-6  ➺      ⦁  كود لانشاء شات كتابي** ⦁",' ‎ ')  
+ .addField("**#help-js-admin-7  ➺      ⦁  كود لانشاء روم صوتي** ⦁",' ‎ ')
+ .addField("**#help-js-admin-8  ➺      ⦁  invite : كود دعوه البوت مثال ** ⦁",' ‎ ')  
+ .addField("**#help-js-admin-9  ➺ ⦁  كود الاوتو رول التفعيل داخل السيرفر ** ⦁",' ‎ ')
+     
+     
+     
+ .setFooter('Toxic Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+ 
+    }
+});
+ 
+ 
+ 
+          client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود الباند**
+ https://pastebin.com/YZAXKYUB
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+ 
+            client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود الكيك**
+ https://pastebin.com/0cNVLm1a
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+              client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-3") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود مسح الشات ( الكلير ) نفس سبيد بوت**
+ https://pastebin.com/QERKkTtk
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+ 
+ 
+                client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-4") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود فتح وتقفيل الشات**
+ https://pastebin.com/gb4me9bS
+`);
+ 
+    }
+});  
+ 
+ 
+                  client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-5") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ ** كود رابط يرسله خاص ل 100شخص لمدة 24 ساعه**
+ https://pastebin.com/Xe5kzVUw
+`);
+ 
+    }
+});
+ 
+         client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-6") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ ** كود لانشاء شات كتابي**
+ https://pastebin.com/ChtbaGu2
+`);
+ 
+    }
+});
+ 
+           client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-7") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ ** كود لانشاء روم صوتي**
+ https://pastebin.com/Y2SWEE6N
+`);
+ 
+    }
+});
+ 
+ 
+ 
+          client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-8") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **invite : كود دعوه البوت مثال **
+ https://pastebin.com/hP9VQpFR
+`);
+ 
+    }
+});  
+ 
+ 
+          client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-9") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود الاوتو رول التفعيل داخل السيرفر **
+ https://pastebin.com/7tVEa317
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+ 
+ 
+ 
+         client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-general") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+ .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+ .addField("**#help-js-general-1  ➺      ⦁ كود البنق **⦁",' ‎ ')
+ .addField("**#help-js-general-2  ➺      ⦁ كود القرعة ** ⦁",' ‎ ')
+ .addField("**#help-js-general-3  ➺      ⦁ كود الافتار  ** ⦁",' ‎ ')   
+ .addField("**#help-js-general-4  ➺      ⦁ كود معلومات السيرفر ** ⦁",' ‎ ')
+ .addField("**#help-js-general-5  ➺      ⦁ كود المعلومات الشخصية** ⦁",' ‎ ')
+ .addField("**#help-js-general-6  ➺      ⦁ كود كت تويت** ⦁",' ‎ ')  
+ .addField("**#help-js-general-7  ➺      ⦁ كود صراحه** ⦁",' ‎ ')     
+     
+     
+ .setFooter('Toxic Codes')
+ 
+   message.channel.send({embed});
+ 
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+ 
+                  client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود البنق**
+ https://pastebin.com/iCmTpWJX
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                        client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود القرعة**
+ https://pastebin.com/eZHv8NPC
+`);
+ 
+    }
+});
+ 
+ client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-3") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود الافاتار**
+ https://pastebin.com/aBzSWJxy
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-4") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود معلومات السيرفر**
+ https://pastebin.com/Z082PXt3
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+ 
+                    client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-5") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود المعلومات الشخصية**
+ https://pastebin.com/ZMhAPtSB
+`);
+ 
+    }
+});
+ 
+ 
+                client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-6") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود كت تويت**
+ https://pastebin.com/fak2SQsm
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                    client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-7") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود صراحه **
+ https://pastebin.com/NC32yt0v
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+           client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-welcome") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("**#help-js-welcome-1  ➺      ⦁ كود ترحيب مع ذكر رقم العضو **⦁",' ‎ ')
+   .addField("**#help-js-welcome-2  ➺      ⦁ كود الترحيب مع صورة ** ⦁",' ‎ ')
+     .addField("**#help-js-welcome-3  ➺      ⦁ كود مغادرة العضو ** ⦁",' ‎ ')
+           .addField("**#help-js-welcome-4  ➺      ⦁ كود تم دعوته بواسطة ** ⦁",' ‎ ')
+ 
+     
+           
+ .setFooter('Toxic Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود ترحيب بصورة**
+ https://paste.drhack.net/?ded81e2b02cab246#Oej+XdoRpbGnlTET2iH2zKdVCn+WFNCUatLLtOU1urs=
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                        client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود الترحيب في الخاص مع رقم العضو**
+ https://paste.drhack.net/?854e74d128b66da8#3menzqbk4bSRPItx7czUQhc1iuwjQRZTyaEVF6ZUktE=
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-3") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖**كود مغادرة العضو**
+ https://pastebin.com/8Da43txR
+`);
+ 
+    }
+});
+ 
+ 
+ 
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-4") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود تم دعوته بواسطة**
+ https://pastebin.com/ihCR8nhW
+`);
+ 
+    }
+});
+ 
+ 
+ 
+             client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-help") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("**#help-js-help-1  ➺      ⦁ كود هلب مع امبد يرسل بنفس الشات **⦁",' ‎ ')
+   .addField("**#help-js-help-2  ➺      ⦁ كود هلب مزخرف بدون امبد ويرسل عالخاص ** ⦁",' ‎ ')
+           
+ .setFooter('Toxic Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                        client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-help-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود هلب مع امبد يرسل بالخاص**
+ https://pastebin.com/ZC0FHb0c
+`);
+ 
+    }
+});
+ 
+ 
+ 
+                          client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-help-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود هلب بدون امبد ويرسل عالخاص**
+ https://pastebin.com/MuCMUQYc
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+               client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-bc") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+  .addField("⦁`All types of codes in Toxic CodesServer 💬`⦁",' ‎ ')
+  .addField("**#help-js-bc-1  ➺      ⦁ برودكاست + للكل + مطور **⦁",' ‎ ')
+  .addField("**#help-js-bc-2  ➺      ⦁ برودكاست + للكل + غير مطور ** ⦁",' ‎ ')
+  .addField("**#help-js-bc-3  ➺      ⦁ برودكاست + للأونلاين + مع منشن + غير مطور **⦁",' ‎ ')
+  .addField("**#help-js-bc-4  ➺      ⦁ برودكاست + للكل + مع منشن + غير مطور ** ⦁",' ‎ ')      
+           
+ .setFooter('Toxic Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                              client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **برودكاست + للكل **
+ https://pastebin.com/n2SyjdwH
+`);
+ 
+    }
+});
+ 
+ 
+ 
+                            client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **برودكاست + للكل + غير مطور**
+ https://pastebin.com/n2SyjdwH
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                            client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-3") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ ** برودكاست + للأونلاين + مع منشن + غير مطور**
+ https://pastebin.com/n2SyjdwH
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                              client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-4") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **برودكاست + للكل + مع منشن + غير مطور**
+ https://pastebin.com/n2SyjdwH
+`);
+ 
+    }
+});
 
  client.on("message", message => {
             if(message.content.startsWith("#تقديم")) {
