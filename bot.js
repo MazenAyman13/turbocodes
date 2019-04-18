@@ -61,7 +61,7 @@ client.on('ready', () => {
             if(message.content.startsWith("#تقديم")) {
         if(!message.channel.guild) return;
                 if(message.author.bot) return;
-        let channel = message.guild.channels.find("name", "takdimat")///n3k4a is one  
+        let channel = message.guild.channels.find("name", "hello")///n3k4a is one  
             if(!channel) return message.reply("**لانشاء روم ✽-التقديمات !!setsubmissions من فضلك اكتب الامر**")
             if(channel) {
             message.channel.send( message.member + ', **:timer:**').then( (m) =>{
