@@ -1259,6 +1259,72 @@ ${thisMessage}\`\`\`
     }
 }
         });
+
+ client.on('message', message=>{///n3k4a is one  
+            if(message.content.startsWith("#setتقديمات")) {
+            if(!message.channel.guild) return;///n3k4a is one  
+                if(message.author.bot) return;
+                if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply("**تحتاج الى `MANAGE_CHANNELS`**");
+                message.guild.createChannel("تفديمات", "text").then(c =>{
+                    c.overwritePermissions(message.guild.id, {///n3k4a is one  
+                        SEND_MESSAGES: false
+ 
+                          })///n3k4a is one  
+                })
+    message.channel.send("**✅ تم انشاء روم التقديمات بنجاح**")///n3k4a is one  
+            }
+            })
+ 
+client.on("message", msg => { //Toxic Codes
+  if(msg.author.bot) return;
+  if(msg.channel.type === 'dm') return;
+let prefix = '#'; //البرفكس
+let msgarray = msg.content.split(" ");
+let cmd = msgarray[0];
+let args = msgarray.slice(1);
+if(!msg.guild.member(msg.author).hasPermission("MANAGE_ROLES")) return;
+if(cmd === `${prefix}قبول`){
+ 
+ 
+ 
+  let aUser = msg.guild.member(msg.mentions.users.first() || msg.guild.members.get(args[0]));
+if(!aUser) return msg.channel.send("Couldn't find users.");
+ 
+ 
+   
+   
+    let ac = msg.guild.channels.find(`name`,"القبول-الرفض");
+    if(!ac) return msg.channel.send("Couldn't find `القبول-الرفض` channel. ");
+    ac.send(`** [ @Support  ]تم بنجاح قبولك  واعطائك رتبة ${aUser}**`)
+ 
+    msg.delete().catch(O_o=>{});
+    var role = msg.guild.roles.find(`name`, 'Support');
+    var role2 = msg.guild.roles.find(`name`, 'Github');
+    var role3 = msg.guild.roles.find(`name`, 'Heroku');
+    if(!role) return msg.guild.channel.send("Could't find `Support` role.");
+    aUser.addRole(role);
+    aUser.addRole(role2);
+    aUser.addRole(role3);
+   
+        return;
+    }
+    });
+
+client.on('message',async message => {
+  let mention = message.mentions.members.first();///n3k4a is one  
+  if(message.content.startsWith("#رفض")) {
+  if(!message.channel.guild) return;///n3k4a is one  
+  let acRoom = message.guild.channels.find('name', 'القبول-الرفض');
+  if(!acRoom) return message.reply("#روم2 من فضلك انشاء روم **القبول-الرفض** او اكتب الامر");
+  if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
+  if(!mention) return message.reply("منشن شخص");///n3k4a is one  
+ 
+  acRoom.send(`**${mention} تم رفضك للاسف**`)
+  }
+});
+
+
+
  client.on('guildMemberAdd', member => {
   member.guild.fetchInvites().then(guildInvites => {
     const ei = invites[member.guild.id];
@@ -1397,6 +1463,15 @@ invites.push( `رابط الانفايت حق  :point_up::skin-tone-1::  ${inv.u
     }
 });
 
+client.on ("guildMemberAdd", member => {
+ 
+   var role = member.guild.roles.find ("name", "Member");
+   member.addRole (role);
+ 
+})
+
+
+
 client.on('message', message => {
     if (message.author.bot) return;
      if (message.content  === prefix + "help2") {
@@ -1417,7 +1492,9 @@ client.on('message', message => {
 .addField("❖ #top-inv ➾ اكثر شخص بالدعوات ⦁",' ‎ ')
 .addField("❖ ❖ #ping ➾ عرض سرعه اتصال البوت ⦁",' ‎ ')
 .addField("❖ ❖ #server ➾ معلومات عن السيرفر ⦁",' ‎ ')
- 
+.addField("❖ ❖ #setتقديمات ➾ لظهور التقديمات في هئا الروم اذا تبي تقديم ⦁",' ‎ ')
+.addField("❖ ❖ #setتقديمات ➾ لرفض او قبول التقديم ⦁",' ‎ ')
+          
  .setFooter('Turbo Codes')
  
  
