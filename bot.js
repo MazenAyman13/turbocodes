@@ -58,6 +58,29 @@ client.user.setStatus("dnd")
 });
 
 client.on('message', message => {
+  if (true) {
+if (message.content === '#invite') {
+      message.author.send('  https://discordapp.com/api/oauth2/authorize?client_id=568536417731477549&permissions=8&scope=bot  |  تفضل ربط البوت     ').catch(e => console.log(e.stack));
+ 
+    }
+   }
+  });
+ 
+ 
+client.on('message', message => {
+     if (message.content === "#invite") {
+     let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#9B59B6")
+  .addField(" Done | تــــم" , " |  تــــم ارســالك في الخــاص")
+     
+     
+     
+  message.channel.sendEmbed(embed);
+    }
+});
+
+client.on('message', message => {
     if (message.author.bot) return;
      if (message.content  === prefix + "help-js") {
           const embed = new Discord.RichEmbed()
@@ -1487,7 +1510,7 @@ client.on('message', message => {
    .addField("❖ #member ➾ معلومات الاعضاء ⦁",' ‎ ')
      .addField("❖ #av ➾ صورة حسابك ⦁",' ‎ ')
                .addField("❖ #id ➾ اي دي ⦁",' ‎ ')
-               .addField("❖ #inv ➾ رابط اضافة البوت⦁",' ‎ ')
+               .addField("❖ #invite ➾ رابط اضافة البوت⦁",' ‎ ')
 .addField("❖ #own ➾ مسؤول البوت⦁",' ‎ ')
 .addField("❖ #top-inv ➾ اكثر شخص بالدعوات ⦁",' ‎ ')
 .addField("❖ ❖ #ping ➾ عرض سرعه اتصال البوت ⦁",' ‎ ')
