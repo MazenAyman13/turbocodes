@@ -52,6 +52,9 @@ client.on('ready', () => {
   console.log('╚[════════════]╝')
   console.log('')
   console.log('')
+client.user.setGame(`#help-js | #help2 | #تقديم `,"http://twitch.tv/S-F")
+client.user.setStatus("dnd")
+ 
 });
 
 client.on('message', message => {
@@ -71,7 +74,7 @@ client.on('message', message => {
            .addField("❧  **#help-js-help      ➺      ⦁ قسم أكواد الهلب** ⦁",' ‎ ')
             .addField("❧  **#help-js-bc        ➺      ⦁ قسم أكواد البرودكاست** ⦁",' ‎ ')
                  .addField("❧  **#help-js-games        ➺      ⦁ قسم اكواد الالعاب** ⦁",' ‎ ')
- .setFooter('Toxic Codes')
+ .setFooter('Turbo Codes')
  
  
    message.channel.send({embed});
@@ -1256,5 +1259,173 @@ ${thisMessage}\`\`\`
     }
 }
         });
+ client.on('guildMemberAdd', member => {
+  member.guild.fetchInvites().then(guildInvites => {
+    const ei = invites[member.guild.id];
+    const invite = guildInvites.find(i => ei.get(i.code).uses < i.uses);
+    const inviter = client.users.get(invite.inviter.id);
+    const stewart = member.guild.channels.find("name", "welcome");
+     stewart.send(`<@${member.user.id}> تمت الدعوه من <@${inviter.id}>`);
+   //  stewart.send(`<@${member.user.id}> joined using invite code ${invite.code} from <@${inviter.id}>. Invite was used ${invite.uses} times since its creation.`);
+  });
+});
+
+client.on('message', function(msg) {
+    if(msg.content.startsWith (prefix  + 'server')) {
+      let embed = new Discord.RichEmbed()
+      .setColor('RANDOM')
+      .setThumbnail(msg.guild.iconURL)
+      .setTitle(`Showing Details Of  **${msg.guild.name}*`)
+      .addField(':globe_with_meridians:** نوع السيرفر**',`[** __${msg.guild.region}__ **]`,true)
+      .addField(':medal:** __الرتب__**',`[** __${msg.guild.roles.size}__ **]`,true)
+      .addField(':red_circle:**__ عدد الاعضاء__**',`[** __${msg.guild.memberCount}__ **]`,true)
+      .addField(':large_blue_circle:**__ عدد الاعضاء الاونلاين__**',`[** __${msg.guild.members.filter(m=>m.presence.status == 'online').size}__ **]`,true)
+      .addField(':pencil:**__ الرومات الكتابية__**',`[** __${msg.guild.channels.filter(m => m.type === 'text').size}__** ]`,true)
+      .addField(':microphone:**__ رومات الصوت__**',`[** __${msg.guild.channels.filter(m => m.type === 'voice').size}__ **]`,true)
+      .addField(':crown:**__ الأونـر__**',`**${msg.guild.owner}**`,true)
+      .addField(':id:**__ ايدي السيرفر__**',`**${msg.guild.id}**`,true)
+ 
+      .addField(':date:**__ تم عمل السيرفر في__**',msg.guild.createdAt.toLocaleString())
+ 
+      msg.channel.send({embed:embed});
+    }
+  });
+
+client.on('message', message => {
+           if (message.content.startsWith(prefix + "id")) {
+     var args = message.content.split(" ").slice(1);
+     let user = message.mentions.users.first();
+     var men = message.mentions.users.first();
+        var heg;
+        if(men) {
+            heg = men
+        } else {
+            heg = message.author
+        }
+      var mentionned = message.mentions.members.first();
+         var h;
+        if(mentionned) {
+            h = mentionned
+        } else {
+            h = message.member
+        }
+               moment.locale('ar-TN');
+      var id = new  Discord.RichEmbed()
+      .setAuthor(message.author.username, message.author.avatarURL)
+    .setColor("#707070")
+    .addField(': دخولك لديسكورد قبل', `${moment(heg.createdTimestamp).format('YYYY/M/D HH:mm:ss')} **\n** \`${moment(heg.createdTimestamp).fromNow()}\`` ,true)
+    .addField(': انضمامك لسيرفر قبل', `${moment(h.joinedAt).format('YYYY/M/D HH:mm:ss')} \n \`${moment(h.joinedAt).fromNow()}\``, true)              
+    .setFooter(`D.JPEI`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                
+    .setThumbnail(heg.avatarURL);
+    message.channel.send(id)
+}      
+});
+
+client.on('message', message => {
+    if(message.content == '#member') {
+    const embed = new Discord.RichEmbed()
+    .setColor('RANDOM')
+    .setImage(message.guild.iconURL)
+    .addField(`حالة الأعضاء🔋`,'-',   true)
+.addField(`💚 اونلاين:   ${message.guild.members.filter(m=>m.presence.status == 'online').size}`,'-',   true)
+.addField(`❤ مشغول:     ${message.guild.members.filter(m=>m.presence.status == 'dnd').size}`,'-',   true)
+.addField(`💛 خامل:      ${message.guild.members.filter(m=>m.presence.status == 'idle').size}`,'-',   true)  
+.addField(`🖤 اوفلاين:   ${message.guild.members.filter(m=>m.presence.status == 'offline').size}`,'-',  true)
+.addField(`💙   الكل:  ${message.guild.memberCount}`,'-',   true)        
+         message.channel.send({embed});
+ 
+    }
+  });
+
+  client.on('message', message => {
+    if (message.content.startsWith("#av")) {
+        var mentionned = message.mentions.users.first();
+    var x5bzm;
+      if(mentionned){
+          var x5bzm = mentionned;
+      } else {
+          var x5bzm = message.author;
+         
+      }
+        const embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setImage(`${x5bzm.avatarURL}`)
+      message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message => {    
+          if(!message.channel.guild) return;
+   if(message.author.bot) return;
+      if(message.content === "#own"){
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+      .addField(':crown:**__<@462006869834203159>__**',`**${msg.guild.owner}**`,true)
+ 
+ 
+       .setFooter('Toxic Codes')
+ 
+ 
+   message.channel.send({embed});
+      }
+  });
+
+client.on('message',message =>{
+    if(message.content ==  "#top inv"){
+message.guild.fetchInvites().then(i =>{
+var invites = [];
+ 
+i.forEach(inv =>{
+    var [invs,i]=[{},null];
+   
+    if(inv.maxUses){
+        invs[inv.code] =+ inv.uses+"/"+inv.maxUses;
+    }else{
+        invs[inv.code] =+ inv.uses;
+    }
+invites.push(`  لقد دعوت  :- (${inv.inviter}) =  (${invs[inv.code]}) \;`);
+ 
+invites.push( `رابط الانفايت حق  :point_up::skin-tone-1::  ${inv.url} \;`);
+});
+  message.channel.send(invites.join(`\n`)+'\n\n**By @everyone:** '+message.author);
+ 
+});
+ 
+    }
+});
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help2") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+  .addField("╔[❖════════════❖]╗",' ‎ ')
+ .addField("      اوامر عامه      ",' ‎ ')
+ .addField("  ╚[❖════════════❖]╝`⦁",' ‎ ')
+   .addField("❖ #member ➾ معلومات الاعضاء ⦁",' ‎ ')
+     .addField("❖ #av ➾ صورة حسابك ⦁",' ‎ ')
+               .addField("❖ #id ➾ اي دي ⦁",' ‎ ')
+               .addField("❖ #inv ➾ رابط اضافة البوت⦁",' ‎ ')
+.addField("❖ #own ➾ مسؤول البوت⦁",' ‎ ')
+.addField("❖ #top-inv ➾ اكثر شخص بالدعوات ⦁",' ‎ ')
+.addField("❖ ❖ #ping ➾ عرض سرعه اتصال البوت ⦁",' ‎ ')
+.addField("❖ ❖ #server ➾ معلومات عن السيرفر ⦁",' ‎ ')
+ 
+ .setFooter('Turbo Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+ 
+    }
+});
+
 
 client.login(process.env.BOT_TOKEN);
