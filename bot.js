@@ -1187,7 +1187,7 @@ ${thisMessage}\`\`\`
         if(!message.channel.guild) return;
                 if(message.author.bot) return;
         let channel = message.guild.channels.find("name", "تقديمات")///n3k4a is one  
-            if(!channel) return message.reply("**لانشاء روم ✽-التقديمات !!setتفديمات من فضلك اكتب الامر**")
+            if(!channel) return message.reply("**لا يوجد روم للتقديمات**")
             if(channel) {
             message.channel.send( message.member + ', **:timer:**').then( (m) =>{
               m.edit( message.member + ', **اسمك الحقيقى بالكامل ✍**' )///n3k4a is one  
@@ -1223,7 +1223,7 @@ ${thisMessage}\`\`\`
                                       var ask2 = m4.content;
                                       m4.delete();///n3k4a is one  
                                       message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                        m.edit( message.member + ', **لماذا يجب علينا ان نقبلك ؟ اعطنا كودالشخص مسويه ؟🤔**' )
+                                        m.edit( message.member + ', **لماذا يجب علينا قبولك اعطي للإدارة كود مسويه🤔**' )
                                         m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m5) => {///n3k4a is one  
                                             m5 = m5.first();
                                             var ask3 = m5.content;
@@ -1237,7 +1237,7 @@ ${thisMessage}\`\`\`
                         .addField('**`العمر`**', `${age}` , true)
                         .addField('**`هما هي لغه البرمجة الخاصه به ؟ `**',`${ask}`)///n3k4a is one  
                         .addField('**`*VarوCost هل يعرف الفرق بين `**',`${ask2}`)
-                        .addField('**`لماذا يجب علينا ان نقبلك ؟ اعطنا كودالشخص مسويه ؟🤔`**',`${ask3}`)
+                        .addField('**`لماذا يجب علينا ان نقبله؟ سوف يعطي الإدارة كود هو مسويه`**',`${ask3}`)
                         .setFooter(message.author.username,'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')
                         channel.send(embed)
                         }, 2500);///n3k4a is one  
@@ -1261,11 +1261,11 @@ ${thisMessage}\`\`\`
         });
 
  client.on('message', message=>{///n3k4a is one  
-            if(message.content.startsWith("#setتقديمات")) {
+            if(message.content.startsWith("#settakdimat")) {
             if(!message.channel.guild) return;///n3k4a is one  
                 if(message.author.bot) return;
                 if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply("**تحتاج الى `MANAGE_CHANNELS`**");
-                message.guild.createChannel("تفديمات", "text").then(c =>{
+                message.guild.createChannel("تقديمات", "text").then(c =>{
                     c.overwritePermissions(message.guild.id, {///n3k4a is one  
                         SEND_MESSAGES: false
  
@@ -1492,8 +1492,8 @@ client.on('message', message => {
 .addField("❖ #top-inv ➾ اكثر شخص بالدعوات ⦁",' ‎ ')
 .addField("❖ ❖ #ping ➾ عرض سرعه اتصال البوت ⦁",' ‎ ')
 .addField("❖ ❖ #server ➾ معلومات عن السيرفر ⦁",' ‎ ')
-.addField("❖ ❖ #setتقديمات ➾ لظهور التقديمات في هئا الروم اذا تبي تقديم ⦁",' ‎ ')
-.addField("❖ ❖ #setتقديمات ➾ لرفض او قبول التقديم ⦁",' ‎ ')
+.addField("❖ ❖ #settakdimat➾ لظهور التقديمات في هئا الروم اذا تبي تقديم ⦁",' ‎ ')
+.addField("❖ ❖ #setkbol ➾ لرفض او قبول التقديم ⦁",' ‎ ')
           
  .setFooter('Turbo Codes')
  
