@@ -59,7 +59,7 @@ client.user.setStatus("dnd")
 let vipKeys = 
 JSON.parse(fs.readFileSync("./vipKeys.json", "utf8"));
 client.on("message", msg=>{
-let id = "348586830305689600"; // ايديك
+let id = "476088952726749188"; // ايديك
 let role = "VIP"; // اسم رتبة الفيب
 let Price = 10000k; // السعر
 let Price2 = Math.floor(Price-(Price*(1/100)));
